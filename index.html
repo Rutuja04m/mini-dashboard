@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Utility Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+  <div class="round-clock" id="round-clock">
+    <span id="clock"></span>
+  </div>
+  <div id="date"></div>
+</div>
+    <div class="center">
+      <div id="greeting"></div>
+      <button id="toggle-theme">🔆/🌙change the Theme</button>
+    </div>
+    <div class="right">
+      <div class="weather-widget">
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button onclick="getWeather()">Get Weather</button>
+        <button onclick="toggleTempUnit()">Switch °C/°F</button>
+        <div id="weather"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
